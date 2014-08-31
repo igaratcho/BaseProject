@@ -7,7 +7,10 @@ namespace ExtensionMethods
 {
 	public static class MonoBehaviourExtension 
 	{	
-
+		public static Object Load(this GameObject obj, string path)
+		{
+			return Resources.Load (path) ;
+		}
 	}
 
 	public static class TransformExtension 
@@ -54,7 +57,8 @@ namespace ExtensionMethods
 			transform.position = pos;
 		}
 
-		public static void SetParent(this Transform transform, Transform parent) {
+		public static void SetParent(this Transform transform, Transform parent)
+		{
 			transform.parent = parent;
 			transform.localPosition = Vector3.zero;
 			transform.localRotation = Quaternion.identity;

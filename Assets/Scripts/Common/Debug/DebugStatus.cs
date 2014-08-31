@@ -8,6 +8,7 @@ public class DebugStatus : SingletonBase<DebugStatus>
 	public bool show = true;
 	public bool showInEditor = false;
 
+#if DEBUG_MODE
 	float lastCollect = 0;
 	float lastCollectNum = 0;
 	float delta = 0;
@@ -24,7 +25,7 @@ public class DebugStatus : SingletonBase<DebugStatus>
 		useGUILayout = false;
 	}
 
-#if DEBUG_MODE
+
 	void OnGUI ()
 	{
 
