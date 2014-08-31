@@ -58,7 +58,6 @@
      <Compile Include="Assets\Scripts\Common\System\TransitionManager.cs" />
      <Compile Include="Assets\Scripts\Common\UI\AspectRatio.cs" />
      <Compile Include="Assets\Scripts\Common\Util\ObjectPool.cs" />
-     <Compile Include="Assets\Scripts\Test.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
